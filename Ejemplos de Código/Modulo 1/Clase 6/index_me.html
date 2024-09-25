@@ -1,36 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejemplos de Formularios HTML5</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; }
+        form { max-width: 500px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; }
+        label { display: block; margin-top: 10px; }
+        input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; }
+        fieldset { margin-top: 20px; }
+        button { margin-top: 20px; padding: 10px 20px; }
+    </style>
 </head>
 <body>
-    <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="nombre">
+<h1>Ejemplo de formularios para VISSUAL</h1>
 
-    <label for="email">Email</label>
-    <input type="email" id="nombre" name="email">
-    
-    <label for=""></label>
+<form id="registro" action="/registro" method="post">
+    <h2>Dejanos tus datos y te contactamos</h2>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
 
-    <input type="email" id="email" name="email">
-    <input type="tel" name="telefono" id="telefono">
-    <input type="number" name="edad" id="edad" min="0" max="120">
-    <input type="date" name="fecha" id="fecha">
-    <input type="color" id="color" name="color">
-    <input type="range" id="rango" name="rango" min="0" max="100">
-    <input type="url" id="sitio" name="sitio">
-    <input type="radio" name="" id="">
-    <select>
-        <option>
-       
-        </option>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+    <fieldset>
+        <legend>Género:</legend>
+        <label>
+            <input type="radio" name="genero" value="masculino" required> Masculino
+        </label>
+        <label>
+            <input type="radio" name="genero" value="femenino"> Femenino
+        </label>
+        <label>
+            <input type="radio" name="genero" value="otro"> Otro
+        </label>
+    </fieldset>
+
+    <label for="Tratamientodedatos" name="data_treatment" >Acepto que mis datos sean tratados según la ley.</label>
+    <input type="checkbox">
+
+    <button type="submit">Registrarse</button>
+</form>
+
+<form id="pedido" action="/Solicitud" method="post">
+    <h2>Formulario de Pedido</h2>
+    <label for="servicio">Seleccione el diseño que desea:</label>
+    <select id="servicio" name="servicio" required>
+        <option value="">Básico</option>
+        <option value="1">Intermedio</option>
+        <option value="2">Avanzado en Autocad 3d</option>
+        <option value="3">Avanzado en REVIT</option>
     </select>
-   
-    <div>
-        <input type="text" name="username" id="username" value="Valor predeterminado" placeholder="Ingrese su nombre de usuario" required>
-    </div>
 
+    <label for="cantidad">Cantidad de bocetos:</label>
+    <input type="number" id="cantidad" name="cantidad" min="1" max="10" required>
+    
+    <label for="Description">Describa datos adicionales que requiera:</label>
+    <textarea id="direccion" name="direccion" rows="3" required></textarea>
+    
+    <fieldset>
+        <legend>Medio de Envío</legend>
+        <label>
+            <input type="checkbox" name="email" value="email">Correo Electrónico
+            <input type="checkbox" name="email" value="email">Dirección Domicilio
+        </label>
+
+    </fieldset>
+    
+
+    <fieldset>
+        <legend>Método de pago:</legend>
+        <label>
+            <input type="radio" name="pago" value="tarjeta" required> Tarjeta de crédito
+        </label>
+        <label>
+            <input type="radio" name="pago" value="paypal"> PayPal
+        </label>
+        <label>
+            <input type="radio" name="pago" value="transferencia"> Transferencia bancaria
+        </label>
+    </fieldset>
+
+    <button type="submit">Realizar Solicitud</button>
+</form>
+
+<form id="contacto" action="/contacto" method="post">
+    <h2>¿Tiene alguna duda?</h2>
+    <label for="nombre_contacto">Nombre:</label>
+    <input type="text" id="nombre_contacto" name="nombre_contacto" required>
+
+    <label for="email_contacto">Email:</label>
+    <input type="email" id="email_contacto" name="email_contacto" required>
+
+    <label for="asunto">Asunto:</label>
+    <input type="text" id="asunto" name="asunto" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+    <fieldset>
+        <legend>¿Cómo prefiere que le contactemos?</legend>
+        <label>
+            <input type="checkbox" name="contacto_prefer" value="email"> Email
+        </label>
+        <label>
+            <input type="checkbox" name="contacto_prefer" value="telefono"> Teléfono
+        </label>
+    </fieldset>
+
+    <button type="submit">Enviar Mensaje</button>
+</form>
 </body>
 </html>
