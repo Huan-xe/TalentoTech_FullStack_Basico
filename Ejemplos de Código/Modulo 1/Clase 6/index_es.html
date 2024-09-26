@@ -1,0 +1,53 @@
+
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Formulario de Contacto</title> 
+    <style> 
+        body { 
+            font-family: sans-serif; 
+        } 
+        form { 
+            width: 500px; 
+            margin: 0 auto; 
+        } 
+        label { 
+            display: block; 
+            margin-bottom: 5px; 
+        } 
+        input, textarea { 
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 15px; 
+            box-sizing: border-box; 
+        } 
+        button { 
+            background-color: #4CAF50; 
+            color: white; 
+            padding: 10px 20px; 
+            border: none; 
+            cursor: pointer; 
+        } 
+    </style> 
+</head> 
+<body> 
+ 
+    <h1>Formulario de Contacto</h1> 
+ 
+    <form id="contact-form"> 
+        <label for="name">Nombre:</label> 
+        <input type="text" id="name" name="name" required aria-label="Nombre completo"> 
+ 
+        <label for="email">Email:</label> 
+        <input type="email" id="email" name="email" required aria-label="Correo electrónico"> 
+ 
+        <label for="message">Mensaje:</label> 
+        <textarea id="message" name="message" rows="5" aria-label="Escribe tu mensaje aquí"></textarea> 
+ 
+        <button type="submit">Enviar</button> 
+    </form> 
+ 
+</body> 
+</html> 
