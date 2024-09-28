@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Básicos</title>
+    <style>
+        body{
+            color: #333
+        }
+        #contenedor{
+            color:#f0f0f0
+        }
+        .destacado{
+            font-weight: bolder;
+            color: #3e30ed;
+        }
+        h1{
+            font-size: 24px;
+        }
+        ul > li {
+            color:#74ec5c;
+        }
+        li:first-child{
+            color: #32c46e;
+        }
+        li:last-child{
+            color: #88e77b;
+        }
+        p[class~="destacado"]{
+            color: #a82ebb;
+        }
+        span + span {
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+        .caja{
+            width: 200px;
+            height: 200px;
+            border: 2px solid #a82ebb;
+            margin: 10px;
+            padding: 20px;
+            background-color: rgb(168, 46, 187);
+            box-shadow: 30px 20px 10px 10px #e6aaf0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título Principal</h1>
+    <p class="destacado">Parrafo destacado</p>
+    <p>Párrafo normal</p>
+    <div id="contenedor">
+        <p>Párrafo dentro de un div</p>
+    </div>
+    <ul>
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+    </ul>
+    <p> 
+        <span>Texto</span> con 
+        <span>múltiples</span> spans 
+    </p>
+
+    <div class="caja">
+
+    </div>
+</body>
+</html>
