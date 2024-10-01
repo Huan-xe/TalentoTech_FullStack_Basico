@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caja</title>
+    <style>
+        .caja{
+            background-color: brown;
+            width: 200px;
+            height: 200px;
+            border: solid 2px #333;
+            padding: 20px;
+            margin: 20px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: aqua;
+            
+        }
+        p{
+            background-color: azure;
+        }
+        .contenedor {
+    margin: 20px; /* Margen alrededor del contenedor */
+    padding: 10px; /* Relleno dentro del contenedor */
+    background-color: #f0f0f0;
+    border: 1px solid #aaa; /* Bordes del contenedor */
+}
+
+.caja-externa {
+    margin: 15px; /* Margen alrededor de la caja externa */
+    padding: 20px; /* Relleno dentro de la caja externa */
+    border: 3px dashed #ccc; /* Bordes de la caja externa */
+    background-color: #e0e0e0;
+    margin-top: -10px; /* Margen negativo para superponer con el contenedor */
+}
+
+.caja-interna {
+    margin: 10px; /* Margen alrededor de la caja interna */
+    padding: 25px; /* Relleno dentro de la caja interna */
+    border: 2px solid #007bff; /* Bordes de la caja interna */
+    background-color: #fff;
+    margin-left: -15px; /* Margen negativo para superponer con la caja externa */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Fuente general */
+    display: flex;
+    justify-content: center; /* Centrar la tarjeta en la página */
+    padding: 20px; /* Relleno alrededor de la página */
+    background-color: #f0f0f0; /* Color de fondo de la página */
+}
+
+.tarjeta-perfil {
+    width: 100%; /* Ancho de la tarjeta al 100% */
+    max-width: 300px; /* Ancho máximo de la tarjeta */
+    border: 1px solid #ccc; /* Bordes de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Esconde el contenido que sobresalga */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    margin: 20px; /* Margen alrededor de la tarjeta */
+    background-color: #fff; /* Color de fondo */
+}
+.tarjeta-perfil:hover{
+    border: solid 4px purple; /*Borde hover para darle una impresion de selección de  caja.*/
+}
+
+.imagen-perfil {
+    text-align: center; /* Centra la imagen */
+    padding: 15px; /* Relleno alrededor de la imagen */
+}
+
+.imagen-perfil img {
+    border-radius: 50%; /* Hace la imagen circular */
+    width: 100px; /* Ancho fijo para la imagen */
+    height: 100px; /* Alto fijo para la imagen */
+}
+
+.info-perfil {
+    padding: 15px; /* Relleno dentro de la sección de información */
+}
+
+.info-perfil h2 {
+    margin: 10px 0; /* Margen alrededor del nombre */
+    font-size: 1.5em; /* Tamaño de la fuente */
+}
+
+.info-perfil p {
+    color: #666; /* Color del texto de la descripción */
+}
+
+.acciones {
+    margin-top: 15px; /* Margen superior para separar botones */
+    display: flex; /* Usar flexbox para alinear botones */
+    justify-content: space-between; /* Espacio entre botones */
+}
+
+.btn {
+    padding: 10px 15px; /* Relleno para los botones */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s; /* Transición para el hover */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Color de fondo en hover */
+}
+
+/* Media queries para diseño responsivo */
+@media (max-width: 600px) {
+    .tarjeta-perfil {
+        max-width: 90%; /* Ancho máximo en dispositivos pequeños */
+    }
+
+    .info-perfil h2 {
+        font-size: 1.2em; /* Tamaño de fuente más pequeño en móvil */
+    }
+
+    .btn {
+        flex: 1; /* Hacer que los botones ocupen espacio igual */
+        margin: 0 5px; /* Margen entre botones */
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="caja">
+        <p>Contenido de la caja</p>
+    </div>
+    <div class="contenedor">
+        <div class="caja-externa">
+            <div class="caja-interna">
+                <p>Contenido Interno</p>
+            </div>
+        </div>
+
+
+        <div class="tarjeta-perfil">
+            <div class="imagen-perfil">
+                <img src="https://via.placeholder.com/100" alt="Perfil">
+            </div>
+            <div class="info-perfil">
+                <h2>Nombre Apellido</h2>
+                <p>Descripción breve sobre la persona. Un poco de información interesante aquí.</p>
+                <div class="acciones">
+                    <button class="btn">Seguir</button>
+                    <button class="btn">Mensaje</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
