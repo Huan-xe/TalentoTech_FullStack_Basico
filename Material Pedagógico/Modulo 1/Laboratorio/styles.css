@@ -24,6 +24,7 @@ h1{
     color: rgb(111, 67, 153);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    font-size:  clamp(1.5rem, 5vw, 3rem);
 }
 .main-nav{
     list-style: none;

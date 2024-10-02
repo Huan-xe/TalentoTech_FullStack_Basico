@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VISSUAL</title>
+    <link rel="icon" href="./imgs/VISSUAL.ico" type="image/x-icon" />
+</head>
+<body>
+
+    <header>
+        <img  src="./imgs/dibujo y modelado a tu medida.png" alt="Logotipo VISSUAL" width="100px">
+        <img src="./imgs/dibujo y modelado a tu medida2.png" alt="">
+        <nav>
+            <ul>
+                <il><a href="index.html">Inicio</a></il>
+                <il><a href="design-services.html">Servicios de Diseño</a></il>
+                <il><a href="contact.html">Contáctanos</a></il>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="contacto" action="/contacto" method="post">
+            <h2>Tienes alguna duda? Contáctanos!</h2>
+            <label for="nombre_contacto">Nombre:</label>
+            <input type="text" id="nombre_contacto" name="nombre_contacto" required>
+        
+            <label for="email_contacto">Email:</label>
+            <input type="email" id="email_contacto" name="email_contacto" required>
+        
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
+        
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        
+            <fieldset>
+                <legend><strong>¿Cómo prefieres que te contactemos?</strong></legend>
+                <label>
+                    <input type="checkbox" name="contacto_prefer" value="email"> Email
+                </label>
+                <label>
+                    <input type="checkbox" name="contacto_prefer" value="telefono"> Teléfono
+                </label>
+            </fieldset>
+        
+            <button type="submit">Enviar Mensaje</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 VISSUAL</p><br>
+        <p>Creado por Juan Malaver - 2 de Octubre del 2024</p>
+    </footer>
+</body>
+</html>
