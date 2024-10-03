@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Afacad Flux", sans-serif ;
+}
+header{
+    display: flex;
+    align-items: flex-end;
+    background-color: white;
+
+}
+main{
+    margin: 50px 0px 50px 150px;
+    padding: 0px;
+    align-items: center;
+    
+}
+h1{
+    color: rgb(111, 67, 153);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+}
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(53, 15, 123);
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(158, 137, 212);
+    font-size: clamp(.5rem, 2vw, 1rem);
+}
+.main-nav{
+    list-style: none;
+    background-color: aqua;
+    padding-left: 0;
+    margin-top: 10px;
+
+}
+
+.main-nav__item{
+    display: inline-block;
+    
+}
+.main-nav__item a{
+    background-color: rgb(146, 34, 202);
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 5px;
+    color: white;
+}
+
+.main-nav__item a:hover{
+    color: rgb(55, 5, 86);
+}
+.main-nav__item a:active{
+    color: rgb(159, 73, 213);
+}
+.main-nav__item a::after{
+    content: " | ";
+}
+.main-nav__item a::before{
+    content: " | ";
+}
+@media (max-width: 768px){
+    main{
+        margin: 50px 0px 50px 200px;
+    }
+    h1{
+        font-family:'Courier New', Courier, monospace;
+        color: yellow;
+    }
+    h2{
+        font-family:'Courier New', Courier, monospace;
+        color: blue;
+    }
+    h3{
+        font-family:'Courier New', Courier, monospace;
+        color: red;
+    }
+
+}
