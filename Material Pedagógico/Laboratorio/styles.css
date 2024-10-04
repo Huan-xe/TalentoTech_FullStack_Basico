@@ -39,6 +39,7 @@ h3{
 }
 
 /* Configuración de barra de navegación */
+
 .main-nav{
     list-style: none;
     background-color: aqua;
@@ -77,6 +78,8 @@ h3{
     flex-direction: row;
     
 }
+
+
 @media (max-width: 768px){
     main{
         margin: 50px 0px 50px 200px;

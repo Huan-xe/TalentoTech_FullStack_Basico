@@ -1,0 +1,75 @@
+/* Caracteristicas con Flexbox */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+header{
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+
+}
+nav li{
+    margin-left: 20px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+/* Caracteristicas con GRID */
+
+.galeria{
+    display: grid;
+    grid-template-areas: "obra" "obra" "obra" "obra" "obra";
+    grid-template-columns: 300px 300px 300px 300px 300px;
+    grid-template-rows: auto;
+    gap: 2rem;
+    padding: 5rem;
+}
+
+.obra{
+    border: 3px dash #ddd;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 10px 10px 15px #3e3939;
+}
+.obra:hover{
+    box-shadow: 15px 15px 20px #c97575;
+}
+
+.obra img{
+    max-width: 100%;
+    height: auto;
+}
+/* Reto */
+.obra{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+}
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: brown;    
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
