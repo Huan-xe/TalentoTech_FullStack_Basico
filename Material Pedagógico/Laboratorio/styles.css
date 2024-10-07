@@ -8,18 +8,27 @@ body{
     padding: 0;
     margin: 0;
     font-family: "Afacad Flux", sans-serif ;
+    background-color: #e9abf7;
 }
 header{
     display: flex;
-    align-items: flex-end;
     background-color: white;
+    justify-content: space-around;
 
 }
+header img{
+    margin-top:2rem ;
+    width: auto;
+    height: auto;
+
+}
+nav ul{
+    margin-top: 6rem;
+}
+
 main{
-    margin: 50px 0px 50px 150px;
-    padding: 0px;
-    align-items: center;
-    
+    background-color: #dd91ec;
+
 }
 h1{
     color: rgb(111, 67, 153);
@@ -46,18 +55,22 @@ h3{
     padding-left: 0;
     margin-top: 10px;
 
+
 }
 
 .main-nav__item{
     display: inline-block;
-    
+    margin-right: 10px;
+   
 }
 .main-nav__item a{
     background-color: rgb(146, 34, 202);
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: .5rem;
     padding: 5px;
     color: white;
+    font-size: 1rem;
+    
 }
 
 .main-nav__item a:hover{
@@ -73,10 +86,56 @@ h3{
     content: " | ";
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
-    
+/* Usando GRID */
+
+.imagen-container{
+    display: grid;
+    grid-template-areas: "imagen" "imagen" "imagen";
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    grid-template-rows: auto;
+    padding: 5rem;
+}
+.imagen{
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 15px 15px 20px #b631d0;
+}
+.imagen:hover{
+   border: 2px dashed white;
+}
+.imagen img{
+    height: 400px;
+    width: 400px;
+}
+
+/*  blog&catalogo */
+
+.conteinerotros iframe{
+    width: 500px;
+    height: 300px;
+}
+
+.conteinerotros h2{
+    font-size: 30px;
+    margin-bottom: 2rem;
+    margin-left: 100px;
+}
+
+.conteinerotros{
+    display: grid;
+    grid-template-areas: "blogVissual" "catalogo";
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    grid-template-rows: auto;
+    padding: 5rem;
+
+}
+
+footer{
+    background-color: #380243;
+    color: #e9abf7;
 }
 
 

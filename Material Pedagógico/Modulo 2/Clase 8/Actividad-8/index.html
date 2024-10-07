@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViveroVerde - Tu tuenda de Plantas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+    <header>
+    <h1> ViveroVerde </h1 >
+        <nav>
+            <ul>
+                <li> <a href ="# inicio "> Inicio </a> </li >
+                <li> <a href ="# productos "> Productos </a> </li >
+                <li> <a href ="#sobre - nosotros "> Sobre Nosotros </a> </li >
+                <li> <a href ="# contacto "> Contacto </a> </li >
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="productos">
+            <h2 > Nuestras Plantas </h2>
+            <div class =" productos-grid ">
+                <div class =" producto">
+                <img src ="planta1.jpg " alt ="Planta 1">
+                <h3>Planta 1</h3>
+                <p>Descripción de la planta 1 </p>
+                </div>
+                <div class =" producto">
+                <img src ="planta2.jpg " alt ="Planta 1">
+                <h3>Planta 1</h3>
+                <p>Descripción de la planta 1 </p>
+                </div>
+                <div class =" producto">
+                <img src ="planta3.jpg " alt ="Planta 1">
+                <h3>Planta 1</h3>
+                <p>Descripción de la planta 1 </p>
+                </div>
+            </div>
+        </section>
+        <section id="sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <div class="sobre-nososotros-contenido">
+                <div class="texto">
+                    <p>ViveroVerde es tu destino para encontrar las mejores plantas y consejos de jardinería</p>
+                </div>
+                <div class="imagen">
+                    <img src="tienda.jpg" alt="Nuestra tienda">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Contáctanos</h2>
+            <form class="formulario-contacto">
+                <div class="form-group">
+                    <label for="nombre" >Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" >Email: </label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje" >Mensaje: </label>
+                    <textarea name="mensaje" id="mensaje" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+    <p>&copy ; 2024 ViveroVerde . Todos los derechos reservados.</p>
+    </footer>
+    </body>
+</html>
