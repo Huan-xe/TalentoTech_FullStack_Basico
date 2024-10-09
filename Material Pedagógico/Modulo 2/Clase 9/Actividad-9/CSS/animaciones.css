@@ -1,0 +1,68 @@
+body{
+    display: flex;
+}
+
+.scene{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border: #e5e91e solid;
+}
+
+.sun{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: sunMovement 10s infinite;
+}
+.cloud{ 
+    width: 100px;
+    height: 30px;
+    background-color: aqua;
+    position: absolute;
+    opacity: 0.8;
+    border-radius: 50%;
+    animation: cloudMovement 10s infinite;
+}
+.cloud::before .cloud::after{
+    content: " ";
+    background-color: blue;
+    position:  absolute;
+}
+@keyframes cloudMovement{
+    0% {
+        transform: translateX(-50%) translateY(-50%);
+    }
+    25% {
+        transform: translateX(50%) translateY(-50%);
+    }
+    50% {
+        transform: translateX(-50%) translateY(50%);
+    }
+    75% {
+        transform: translateX(50%) translateY(50%);
+    }
+ 
+}
+
+@keyframes sunMovement {
+    0%, 100%{
+        bottom: -25px;
+        background-color: #e74c3c;
+    }
+    25% {
+        bottom: 50px;
+        background-color: #e79a3c;
+    }
+    50% {
+        bottom: 125px;
+        background-color: #e5e91e;
+    }
+    75% {
+        bottom: 50px;
+        background-color: #e79a3c;
+    }
+}

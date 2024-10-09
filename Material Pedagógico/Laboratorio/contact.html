@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>VISSUAL</title>
+    <!-- Icono VISSUAL -->
     <link rel="icon" href="./imgs/VISSUAL.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="CSS/barra-nav.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/formulario.css">
+    <!-- Font Awesome Iconos -->
     <link rel="stylesheet" href="../Modulo 2/fontawesome-free-6.6.0-web/css/all.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
@@ -27,42 +34,71 @@
     </header>
 
     <main>
-        <form id="contacto" action="/contacto" method="post">
-            <h2> <i class="fa fa-phone"></i> Tienes alguna duda? Contáctanos!</h2>
-            <label for="nombre_contacto">Nombre:</label>
-            <input type="text" id="nombre_contacto" name="nombre_contacto" required>
+<!-- Formulario usando el metodo BEM -->
+        <form class="contact-form" action="/contacto" method="post">
+            <div class="contact-form__item">
+              <h2 class="contact-form__title">
+                <i class="fa fa-phone"></i> 
+                Tienes alguna duda? ¡Contáctanos!
+              </h2>
+            </div>
         
-            <label for="email_contacto">Email:</label>
-            <input type="email" id="email_contacto" name="email_contacto" required>
+            <div class="contact-form__item">
+              <label class="contact-form__label" for="nombre_contacto">Nombre:</label>
+              <input class="contact-form__input" type="text" id="nombre_contacto" name="nombre_contacto" required>
+            </div>
         
-            <label for="asunto">Asunto:</label>
-            <input type="text" id="asunto" name="asunto" required>
+            <div class="contact-form__item">
+              <label class="contact-form__label" for="email_contacto">Email:</label>
+              <input class="contact-form__input" type="email" id="email_contacto" name="email_contacto" required>
+            </div>
         
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            <div class="contact-form__item">
+              <label class="contact-form__label" for="asunto">Asunto:</label>
+              <input class="contact-form__input" type="text" id="asunto" name="asunto" required>
+            </div>
         
-            <fieldset>
-                <legend><strong>¿Cómo prefieres que te contactemos?</strong></legend>
-                <label>
-                    <input type="checkbox" name="contacto_prefer" value="email"> Email
+            <div class="contact-form__item">
+              <label class="contact-form__label" for="mensaje">Mensaje:</label>
+              <textarea class="contact-form__textarea" id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+        
+            <div class="contact-form__item">
+              <fieldset class="contact-form__fieldset">
+                <legend class="contact-form__legend"><strong>¿Cómo prefieres que te contactemos?</strong></legend>
+                <label class="contact-form__checkbox-label">
+                  <input class="contact-form__checkbox" type="checkbox" name="contacto_prefer" value="email"> Email
                 </label>
-                <label>
-                    <input type="checkbox" name="contacto_prefer" value="telefono"> Teléfono
+                <label class="contact-form__checkbox-label">
+                  <input class="contact-form__checkbox" type="checkbox" name="contacto_prefer" value="telefono"> Teléfono
                 </label>
-            </fieldset>
+              </fieldset>
+            </div>
         
-            <button type="submit">Enviar Mensaje</button>
+            <button class="contact-form__button" type="submit">Enviar Mensaje</button>
     </main>
 
-    <footer>
-        <p>&copy; 2024 VISSUAL</p><br>
-        <p>Creado por Juan Malaver - 2 de Octubre del 2024</p>
-        <nav>
-            <ul>
-                <li><a href="#">Política de Privacidad</a></li>
-                <li><a href="#">Términos y Condiciones</a></li>
-            </ul>
+    <footer class="footer">
+
+        <div class="footer__line_container">
+            <hr class="footer__line">
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer__social-link"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            <hr class="footer__line">
+        </div>
+        <p class="footer__copyright">&copy; 2024 VISSUAL</p>
+        <p class="footer__creator">Creado por Juan Malaver - 2 de Octubre del 2024</p>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Política de Privacidad</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Términos y Condiciones</a></li>
+          </ul>
         </nav>
-    </footer>
+      </footer>
+      
 </body>
 </html>
