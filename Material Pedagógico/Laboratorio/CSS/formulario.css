@@ -1,9 +1,12 @@
 .contact-form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 1.5rem auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
+    border: 2px solid #8d41b4;
+    opacity: calc();
+    
+    background-color: #d7bce5;
+    transform: translate(50px);
   }
   
   .contact-form__item {
@@ -16,7 +19,8 @@
   }
   
   .contact-form__label {
-    display: block;
+    display: flex;
+    align-content: center;
     margin-bottom: 5px;
   }
   
@@ -24,7 +28,7 @@
   .contact-form__textarea {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #9d80ed;
     border-radius: 4px;
   }
   
@@ -39,12 +43,14 @@
   }
   
   .contact-form__checkbox-label {
-    display: block;
+    display: flex;
+    align-items: center;
     margin-bottom: 5px;
   }
   
   .contact-form__button {
-    display: block;
+    display: flexbox;
+    text-align:center;
     width: 100%;
     padding: 10px;
     background-color: #b316e8;

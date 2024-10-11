@@ -101,17 +101,5 @@ h3{
     main{
         margin: 50px 0px 50px 200px;
     }
-    h1{
-        font-family:'Courier New', Courier, monospace;
-        color: yellow;
-    }
-    h2{
-        font-family:'Courier New', Courier, monospace;
-        color: blue;
-    }
-    h3{
-        font-family:'Courier New', Courier, monospace;
-        color: red;
-    }
 
 }
