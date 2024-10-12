@@ -22,3 +22,31 @@ console.log(total);
     console.log(a / b);
     
 }) (3,4);
+//Tarea Práctica pseudocódigo
+num = 4
+
+if(num % 2 ==0){
+    console.log("El numero es par");
+}else{console.log("numero es impar");}
+//RETO
+
+
+//Tare 2
+let totalCalorias = 0;
+
+function agregarAlimento(nombre, calorias){
+    //Tu código aquí
+}
+function mostrarTotalCalorias(){
+    //Tu código aquí
+}
+
+//Ejemplo de uso
+agregarAlimento("Manzana", 95);
+agregarAlimento("Yogur", 95);
+mostrarTotalCalorias();
+
+
+
+
+
