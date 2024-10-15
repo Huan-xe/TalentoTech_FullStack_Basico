@@ -16,31 +16,32 @@ header{
     justify-content: space-around;
 
 }
-header img{
-    margin-top:2rem ;
-    width: auto;
-    height: auto;
-
-}
-nav ul{
-    margin-top: 6rem;
-}
-
 main{
     background-color: #dd91ec;
 
 }
-h1{
+.logo{
+    width: auto;
+}
+.card-imgs{
+    margin-top:2rem ;
+    width: auto;
+    height: auto;
+}
+
+
+.title{
     color: rgb(111, 67, 153);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     font-size: clamp(2rem, 5vw, 2.5rem);
 }
-h2{
+.subtitle{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(53, 15, 123);
     font-size: clamp(1rem, 3vw, 1.5rem);
 }
+
 h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(158, 137, 212);
@@ -49,9 +50,9 @@ h3{
 
 
 
-/* Usando GRID */
+/* Usando GRID imagenes index*/
 
-.imagen-container{
+.card_imagenes{
     display: grid;
     grid-template-areas: "imagen" "imagen" "imagen";
     grid-template-columns: repeat(3, 1fr);
@@ -59,16 +60,17 @@ h3{
     grid-template-rows: auto;
     padding: 5rem;
 }
-.imagen{
+.card_imagen{
     padding: 1rem;
     text-align: center;
     border-radius: 10px;
     box-shadow: 15px 15px 20px #b631d0;
+    background-color: #5c136b;
 }
-.imagen:hover{
-   border: 2px dashed white;
+.card_imagen:hover{
+   background: linear-gradient(#310939, #cda1d6);
 }
-.imagen img{
+.card_imagen img{
     height: 400px;
     width: 400px;
 }
@@ -103,3 +105,47 @@ h3{
     }
 
 }
+
+/* GRID videos design */
+.main-content {
+    max-width: auto;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+.card-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    border: 2px solid black;
+  }
+  
+.card-media img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* tabla de precios */
+
+.pricing {
+    margin-top: 40px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  

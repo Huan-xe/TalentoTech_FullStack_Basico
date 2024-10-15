@@ -32,9 +32,18 @@
     margin: 0 10px;
     padding: auto;
     color: #f3f0f4;
-    transition: color 0.3s ease-in-out;
+    position: relative;
+    animation: moveSocial 0.5s infinite;
+}
+
+/* ANIMACION FOOTER */
+
+@keyframes moveSocial{
+    from{top:-5px}
+    to{bottom:10px}
 }
   
+
 .footer__social-link:hover {
     color: #e5b6f1;
     text-decoration: none;
@@ -43,6 +52,7 @@
 
 .footer__nav {
     margin-top: 10px;
+
 }
 
 
@@ -52,6 +62,7 @@
     display: flex;
     justify-content: center;
     gap: 15px;
+    margin-top: 20px ;
 }
   
 .footer__nav-item {
@@ -60,15 +71,16 @@
   
 .footer__nav-link {
     text-decoration: none;
-    color: #007bff;
+    color: #14022c;
 }
   
 .footer__nav-link:hover {
     text-decoration: underline;
+    font-size: 1.25rem;
 }
 
 .footer__nav-link:hover {
-    text-decoration: underline;
+    color: #d2ade4;
 }
 
 .footer__nav-link::after {
@@ -80,27 +92,3 @@
 
 
 
-/* Animaciones */
- /* ARREGLAAAAAR */
-.footer__line{ 
-
-    background-color: aqua;
-    color: #8b0095;
-    position: absolute;
-    animation: lineMovement 10s infinite;
-}
-@keyframes lineMovement{
-    0% {
-        transform: translateX(-50%) translateY(-50%);
-    }
-    25% {
-        transform: translateX(50%) translateY(-50%);
-    }
-    50% {
-        transform: translateX(-50%) translateY(50%);
-    }
-    75% {
-        transform: translateX(50%) translateY(50%);
-    }
- 
-}

@@ -1,21 +1,33 @@
 .contact-form {
     max-width: 600px;
-    margin: 1.5rem auto;
+    margin:  auto;
     padding: 20px;
     border: 2px solid #8d41b4;
-    opacity: calc();
-    
     background-color: #d7bce5;
-    transform: translate(50px);
+
   }
-  
+ .formulario .contact-form {
+  position: relative;
+  animation: moveForm 5s infinite;
+ }
+  @keyframes moveForm{
+    from{left: 0px ;    }
+    to{
+      left:50px
+    }
+  }
+
+
   .contact-form__item {
     margin-bottom: 15px;
   }
   
   .contact-form__title {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(73, 12, 103);
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    text-align: center;
+
   }
   
   .contact-form__label {
@@ -49,7 +61,6 @@
   }
   
   .contact-form__button {
-    display: flexbox;
     text-align:center;
     width: 100%;
     padding: 10px;

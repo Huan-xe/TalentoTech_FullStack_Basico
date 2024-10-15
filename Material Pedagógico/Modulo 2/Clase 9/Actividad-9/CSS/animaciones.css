@@ -17,6 +17,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
     animation: sunMovement 10s infinite;
+    
 }
 .cloud{ 
     width: 100px;

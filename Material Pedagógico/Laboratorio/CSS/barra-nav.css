@@ -1,5 +1,9 @@
 /* Configuración de barra de navegación */
 
+nav ul{
+    margin-top: 6rem;
+}
+
 .main-nav{
     list-style: none;
     background-color: aqua;
@@ -10,7 +14,8 @@
 }
 
 .main-nav__item{
-    display: inline-block;
+    display: flexbox;
+    justify-content: space-around;
     margin-right: 10px;
    
 }
